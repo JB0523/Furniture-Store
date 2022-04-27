@@ -10,7 +10,7 @@ body {
   min-height: 500px;
   height: 70vh;
   grid-template-rows: 75% 25%;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 75% 25% ;
   grid-template-areas: 
   "featuredProduct secondaryProduct"
   "featuredProduct CTA";
@@ -45,8 +45,7 @@ body {
   background-size: cover;
   align-items: center;
   display: flex;
-  position: relative
-
+  position: relative;
 }
 
 #headline
