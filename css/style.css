@@ -38,16 +38,6 @@ body {
   cursor:pointer;
 }
 
-.heroGridArea 
-{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  display: flex;
-  position: relative;
-}
-
 #headline
 {
   border-bottom: 5px solid #FF6200;
@@ -58,6 +48,16 @@ body {
   z-index: 100;
   padding: 25px;
   max-width: 550px;
+}
+
+.heroGridArea 
+{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
 }
 
 /* Category Grid CSS */
@@ -140,13 +140,14 @@ categoryGridArea
   #navigation
   {
     display: none;
+    
   }
-   
-  #icons
+  .icons
   {
     margin-left: auto;
   }
 
+  
 }
 
 @media only screen and (max-width: 600px)
@@ -158,17 +159,15 @@ categoryGridArea
 
   }
   
-}
+  #heroGrid
+  {
+  grid-template-areas: 
+  "featuredProduct featuredProduct"
+  "secondaryProduct CTA";
+  }
 
-#heroGrid
-{
-grid-template-areas: 
-"featuredProduct featuredProduct"
-"secondaryProduct CTA";
-}
-
-#categoryGrid
-{
+  #categoryGrid
+  { 
   grid-template-rows: 300px 300px 300px 300px 300px;
   grid-template-columns: 1fr ;
   grid-template-areas: 
@@ -177,7 +176,9 @@ grid-template-areas:
   "patio"
   "couches"
   "desks";
+  }
 }
+
 
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
 #navBar {
